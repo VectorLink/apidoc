@@ -1,0 +1,12 @@
+syntax = "proto3";
+package finance;
+
+option java_package = "com.vectorlink.grpc.finance.detail";
+
+import "common.proto";
+import "base-finance/FinanceDetailParam.proto";
+
+service FinanceDetail{
+  // 获取公司金额明细
+  rpc  listAllCompanyDetail(common.StringParam)returns(FinanceListResp);
+}

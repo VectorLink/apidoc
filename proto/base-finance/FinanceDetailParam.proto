@@ -1,0 +1,13 @@
+syntax = "proto3";
+package finance;
+
+option java_package = "com.vectorlink.grpc.finance.detail";
+
+import "common.proto";
+
+import "base-finance/FinanceDetailModel.proto";
+
+message FinanceListResp{
+  common.Result result = 1;
+  repeated FinanceDetailModel data = 2;
+}

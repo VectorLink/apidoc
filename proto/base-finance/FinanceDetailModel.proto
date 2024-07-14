@@ -1,0 +1,16 @@
+syntax = "proto3";
+package finance;
+
+option java_package = "com.vectorlink.grpc.finance.detail";
+
+import "common.proto";
+import "base-finance/FinanceDetailModel.proto";
+
+
+
+message FinanceDetailModel{
+  int32 companyId=1;     //公司ID
+  string companyName=2; //公司名称；
+  double financeDetail=3;   //应结明细总额
+  string operator=4;        //操作人名称
+}
