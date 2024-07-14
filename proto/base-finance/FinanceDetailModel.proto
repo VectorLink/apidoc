@@ -4,7 +4,6 @@ package finance;
 option java_package = "com.vectorlink.grpc.finance.detail";
 
 import "common.proto";
-import "base-finance/FinanceDetailModel.proto";
 
 
 
