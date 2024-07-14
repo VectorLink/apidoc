@@ -5,7 +5,7 @@ option java_package = "com.vectorlink.grpc.company.user.param";
 
 import "common.proto";
 import "base-company/companyCommon.proto";
-import "base-company/company/V3UserModel.proto";
+import "base-company/company/CompanyModel.proto";
 
 message V3UserIdOrNameParam{
   string idOrName=1; //姓名或账号

@@ -4,9 +4,9 @@ package company;
 option java_package = "com.vectorlink.grpc.company.user";
 
 import "common.proto";
-import "base-company/company/V3UserParam.proto";
+import "base-company/company/CompanyParam.proto";
 
-service V3User{
+service Company{
   rpc listV3Users (V3UserIdOrNameParam) returns (ListUserPageResp); //分页查询用户列表
   rpc addV3User(UserParam) returns (common.ApiResult);//添加用户
   rpc editV3User(UserParam) returns(common.ApiResult);//编辑用户
